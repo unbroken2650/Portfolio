@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+h1,
+button {
+  font-family: AppleSDGothicNeoH00;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+h1 {
+  font-family: AppleSDGothicNeoH00;
+  text-align: left;
+}
+button {
+  all: unset;
+  text-align: center;
+}

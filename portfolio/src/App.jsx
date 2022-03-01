@@ -1,7 +1,14 @@
-import React from "react";
+import React from 'react';
+import Header from './Components/Header';
+import Main from './Components/Main';
 
 function App() {
-  return <p>Hello World!</p>;
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
 
 export default App;
