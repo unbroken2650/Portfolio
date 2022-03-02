@@ -1,5 +1,8 @@
-a,a:hover,
-a:active{
+@import './scss/font';
+
+a,
+a:hover,
+a:active {
   text-decoration: none;
   outline: none;
 }

@@ -10,7 +10,7 @@ function Links() {
   ];
   return data.map(d => (
     <a key={d.name} id={d.name} href={d.url}>
-      <button type="button">{d.name}</button>
+      {d.name}
     </a>
   ));
 }

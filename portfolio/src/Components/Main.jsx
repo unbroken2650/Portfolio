@@ -1,8 +1,14 @@
 import React from 'react';
-import '../Main.scss';
+import Left from './1_Main/Left';
+import Right from './1_Main/Right';
 
-function Header() {
-  return <p>ABC</p>;
+function Index() {
+  return (
+    <>
+      <Left />
+      <Right />
+    </>
+  );
 }
 
-export default Header;
+export default Index;
