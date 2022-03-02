@@ -18,7 +18,18 @@ h1 {
   font-family: AppleSDGothicNeoH00;
   text-align: left;
 }
-button {
-  all: unset;
-  text-align: center;
+a {
+  text-decoration: none;
+  color: #373737;
+  :hover,
+  :active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #373737;
+  }
+  button {
+    min-height: 100%;
+    all: unset;
+    text-align: center;
+  }
 }
