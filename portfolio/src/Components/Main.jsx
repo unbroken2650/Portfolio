@@ -1,14 +1,14 @@
-import React from 'react';
-import Left from './1_Main/Left';
-import Right from './1_Main/Right';
+import { React } from 'react';
+import Landing from './Landing';
+import Info from './Info';
 
-function Index() {
+function Main() {
   return (
-    <>
-      <Left />
-      <Right />
-    </>
+    <main>
+      <Landing />
+      <Info />
+    </main>
   );
 }
 
-export default Index;
+export default Main;

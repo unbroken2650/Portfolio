@@ -5,10 +5,11 @@ import './Main.scss';
 
 function App() {
   return (
-    <>
+    // eslint-disable-next-line react/jsx-filename-extension
+    <React.StrictMode>
       <Header />
       <Main />
-    </>
+    </React.StrictMode>
   );
 }
 

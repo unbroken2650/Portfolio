@@ -1,5 +1,4 @@
 import React from 'react';
-import './Left.module.scss';
 
 function Left() {
   return (

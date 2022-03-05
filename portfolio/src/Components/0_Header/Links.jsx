@@ -8,11 +8,15 @@ function Links() {
     { name: 'Instagram', url: 'https://www.instagram.com/unbroken2650/' },
     { name: 'Contact', url: 'mailto:unbroken2650@gmail.com' },
   ];
-  return data.map(d => (
-    <a key={d.name} id={d.name} href={d.url}>
-      {d.name}
-    </a>
-  ));
+  return (
+    <div id="links">
+      {data.map(d => (
+        <a key={d.name} id={d.name} href={d.url}>
+          {d.name}
+        </a>
+      ))}
+    </div>
+  );
 }
 
 export default Links;
