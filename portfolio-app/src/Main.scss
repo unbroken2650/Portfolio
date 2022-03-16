@@ -1,13 +1,16 @@
-@import './scss/reset';
-@import './scss/font';
+@import "./scss/reset";
+@import "./scss/font";
 
 //임시 색상
 body {
-  background-color: grey;
+ background-color: grey;
 }
 
 body {
-  margin: 0;
-  max-width: 100vw;
-  overflow-x: hidden;
+ margin: 0;
+ max-width: 100vw;
+ overflow-x: hidden;
+}
+::-webkit-scrollbar {
+ display: none;
 }
