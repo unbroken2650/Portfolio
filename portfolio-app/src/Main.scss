@@ -14,3 +14,12 @@ body {
 ::-webkit-scrollbar {
  display: none;
 }
+
+div#react-container {
+ display: flex;
+ flex-direction: row;
+}
+
+main {
+ width: 100%;
+}
