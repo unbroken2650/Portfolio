@@ -6,7 +6,11 @@ div[id="projects"] {
  justify-content: center;
  align-items: center;
  * {
+  margin: 1% 0;
   color: #fff;
+ }
+ img[class="image_preview"] {
+  width: 300px;
  }
  h2 {
   margin: 0;
@@ -48,7 +52,7 @@ div[id="projects"] {
    a {
     margin: 0 1%;
     width: min-content;
-    img {
+    img[class="image_link"] {
      width: 50px;
     }
    }

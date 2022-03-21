@@ -6,6 +6,7 @@ function Project() {
   <section id="project-detail">
    <img
     src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
+    className="image_preview"
     alt="sample"
    ></img>
    <div id="project-detail-title">

@@ -1,3 +1,4 @@
+@import "./color";
 header {
  display: flex;
  flex-direction: row;
@@ -7,6 +8,7 @@ header {
  top: 0px;
  height: 64px;
  width: 100%;
+ z-index: 999;
 
  background-color: #e5e5e5;
  * {
@@ -23,6 +25,12 @@ header {
   justify-content: center;
   margin: 0 10px;
   font-weight: 700;
+
+  transition: color 1s;
+ }
+ h1:hover {
+  color: $highlight;
+  transition: color 1s;
  }
 
  div[id="links"] {
@@ -32,7 +40,9 @@ header {
   justify-content: space-evenly;
  }
 
- a {
+ a,
+ a:hover,
+ a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,8 +54,6 @@ header {
  }
  a:hover,
  a:active {
-  text-decoration: none;
-  color: #fff;
-  background-color: #373737;
+  color: $highlight;
  }
 }
