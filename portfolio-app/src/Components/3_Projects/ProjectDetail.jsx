@@ -1,7 +1,7 @@
 import React from "react";
 import LinkImage from "./LinkImage";
 
-function Project() {
+function ProjectDetail() {
  return (
   <section id="project-detail">
    <img
@@ -29,4 +29,4 @@ function Project() {
  );
 }
 
-export default Project;
+export default ProjectDetail;

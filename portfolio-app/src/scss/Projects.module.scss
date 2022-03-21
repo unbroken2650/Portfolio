@@ -1,3 +1,5 @@
+@import "./color";
+
 div[id="projects"] {
  height: 100vh;
  width: 100%;
@@ -5,23 +7,24 @@ div[id="projects"] {
  flex-direction: row;
  justify-content: center;
  align-items: center;
+ @media screen and (max-width: 1500px) {
+  flex-direction: column;
+ }
  * {
   margin: 1% 0;
-  color: #fff;
+  color: $white;
  }
- img[class="image_preview"] {
-  width: 300px;
- }
+
  h2 {
   margin: 0;
   text-align: left;
   font-weight: 700;
   font-size: 65px;
-  color: #fff;
+  color: $white;
   @media screen and (max-width: 1500px) {
    width: 100%;
    text-align: center;
-   font-size: 50px;
+   font-size: 30px;
   }
  }
  section[id="projectsleft"] {
@@ -30,8 +33,21 @@ div[id="projects"] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1500px) {
+   width: 100%;
+  }
   div[id="projects-lists"] {
+   width: 100%;
    text-align: center;
+   p {
+    margin: 0 5%;
+   }
+   @media screen and (max-width: 1500px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
   }
  }
  section[id="project-detail"] {
@@ -39,22 +55,52 @@ div[id="projects"] {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  @media screen and (max-width: 1500px) {
+   align-items: center;
+  }
+  img[class="image_preview"] {
+   width: 300px;
+   @media screen and (max-width: 1500px) {
+    width: 80%;
+   }
+  }
+
   div[id="project-detail-title"] {
    width: 50%;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-  }
-  div[id="LinkImage"] {
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   a {
-    margin: 0 1%;
-    width: min-content;
-    img[class="image_link"] {
-     width: 50px;
+   align-items: center;
+   @media screen and (max-width: 1500px) {
+    flex-direction: column;
+    font-size: 12px;
+   }
+   div[id="LinkImage"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    a {
+     margin: 0 1%;
+     width: min-content;
+     img[class="image_link"] {
+      width: 50px;
+     }
     }
+   }
+  }
+
+  div[id="project-detail-brief"] {
+   width: 100%;
+   @media screen and (max-width: 1500px) {
+    text-align: center;
+    font-size: 12px;
+   }
+  }
+  div[id="project-detail-desc"] {
+   width: 100%;
+   @media screen and (max-width: 1500px) {
+    text-align: center;
+    font-size: 12px;
    }
   }
  }
