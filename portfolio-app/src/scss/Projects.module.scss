@@ -1,19 +1,15 @@
 div[id="projects"] {
- //개발용
- background: #000 !important;
-
  height: 100vh;
  width: 100%;
  display: flex;
  flex-direction: row;
  justify-content: center;
  align-items: center;
-
+ * {
+  color: #fff;
+ }
  h2 {
   margin: 0;
-  left: 5%;
-  width: 25%;
-
   text-align: left;
   font-weight: 700;
   font-size: 65px;
@@ -24,7 +20,38 @@ div[id="projects"] {
    font-size: 50px;
   }
  }
- p {
-  color: #fff;
+ section[id="projectsleft"] {
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div[id="projects-lists"] {
+   text-align: center;
+  }
+ }
+ section[id="project-detail"] {
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  div[id="project-detail-title"] {
+   width: 50%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  div[id="LinkImage"] {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   a {
+    margin: 0 1%;
+    width: min-content;
+    img {
+     width: 50px;
+    }
+   }
+  }
  }
 }

@@ -1,10 +1,6 @@
 div[id="landing"] {
  height: 100vh;
  width: 100%;
-
- //개발용
- background: #000 !important;
-
  background: rgb(87, 87, 87);
  background: linear-gradient(
   90deg,
@@ -32,7 +28,7 @@ div[id="landing"] {
   }
  }
 
- section[id="left"] {
+ section[id="landingleft"] {
   position: absolute;
   width: 480px;
   left: 10%;
@@ -40,7 +36,7 @@ div[id="landing"] {
 
   text-align: left;
  }
- section[id="right"] {
+ section[id="landingright"] {
   position: absolute;
   width: 297px;
   right: 10%;

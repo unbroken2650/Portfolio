@@ -1,13 +1,13 @@
 import React from "react";
-import Left from "./1_Landing/Left";
-import Right from "./1_Landing/Right";
+import LandingLeft from "./1_Landing/LandingLeft";
+import LandingRight from "./1_Landing/LandingRight";
 import "../scss/Landing.module.scss";
 
 function Landing() {
  return (
   <div id="landing">
-   <Left />
-   <Right />
+   <LandingLeft />
+   <LandingRight />
   </div>
  );
 }

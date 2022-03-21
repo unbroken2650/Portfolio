@@ -4,6 +4,12 @@
 //임시 색상
 body {
  background-color: grey;
+ main {
+  div {
+   //개발용
+   background: #000 !important;
+  }
+ }
 }
 
 body {
