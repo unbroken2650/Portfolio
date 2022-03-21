@@ -3,6 +3,9 @@ img {
 }
 
 div[id="info"] {
+ //개발용
+ background: #000 !important;
+
  height: 100vh;
  width: 100%;
  display: flex;
@@ -12,9 +15,6 @@ div[id="info"] {
  @media screen and (max-width: 1500px) {
   flex-direction: column;
  }
-
- //개발용
- background: #000 !important;
 
  background: rgb(87, 87, 87);
  background: linear-gradient(

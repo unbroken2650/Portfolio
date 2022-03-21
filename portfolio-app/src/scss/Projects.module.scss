@@ -1,0 +1,30 @@
+div[id="projects"] {
+ //개발용
+ background: #000 !important;
+
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+
+ h2 {
+  margin: 0;
+  left: 5%;
+  width: 25%;
+
+  text-align: left;
+  font-weight: 700;
+  font-size: 65px;
+  color: #fff;
+  @media screen and (max-width: 1500px) {
+   width: 100%;
+   text-align: center;
+   font-size: 50px;
+  }
+ }
+ p {
+  color: #fff;
+ }
+}
