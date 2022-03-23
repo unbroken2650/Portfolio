@@ -27,7 +27,7 @@ function LinkImage() {
   <div id="LinkImage">
    {data.map(({ name, url, src }) => (
     <a key={name} id={name} href={url}>
-     <img src={src} alt={`link to ${name}`}></img>
+     <img src={src} className="image_link" alt={`link to ${name}`}></img>
     </a>
    ))}
   </div>

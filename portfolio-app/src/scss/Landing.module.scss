@@ -1,10 +1,8 @@
+@import "./color";
+
 div[id="landing"] {
  height: 100vh;
  width: 100%;
-
- //개발용
- background: #000 !important;
-
  background: rgb(87, 87, 87);
  background: linear-gradient(
   90deg,
@@ -28,11 +26,22 @@ div[id="landing"] {
   h3,
   p {
    margin: 0;
-   color: #fff;
+   color: $white;
+  }
+  @media screen and (max-width: 1500px) {
+   h2 {
+    font-size: 40px;
+   }
+   h3 {
+    font-size: 15px;
+   }
+   p {
+    font-size: 12px;
+   }
   }
  }
 
- section[id="left"] {
+ section[id="landingleft"] {
   position: absolute;
   width: 480px;
   left: 10%;
@@ -40,7 +49,7 @@ div[id="landing"] {
 
   text-align: left;
  }
- section[id="right"] {
+ section[id="landingright"] {
   position: absolute;
   width: 297px;
   right: 10%;

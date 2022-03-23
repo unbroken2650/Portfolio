@@ -1,9 +1,16 @@
-@import "./scss/reset";
+@import "./scss/color";
 @import "./scss/font";
+@import "./scss/reset";
 
 //임시 색상
 body {
  background-color: grey;
+ main {
+  div {
+   //개발용
+   background: $black !important;
+  }
+ }
 }
 
 body {

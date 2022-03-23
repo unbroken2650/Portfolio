@@ -7,11 +7,13 @@ function Stacks() {
     src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
     alt="sample"
    ></img>
-   <p>State Management (Redux)</p>
-   <p>Type Checking (Typescript)</p>
-   <p>Routing (React Router)</p>
-   <p>TDD + Unit Testing (Jest)</p>
-   <p>Deployment (Netlify)</p>
+   <div id="stacks-detail">
+    <p>State Management (Redux)</p>
+    <p>Type Checking (Typescript)</p>
+    <p>Routing (React Router)</p>
+    <p>TDD + Unit Testing (Jest)</p>
+    <p>Deployment (Netlify)</p>
+   </div>
   </section>
  );
 }

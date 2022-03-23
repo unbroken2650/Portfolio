@@ -1,3 +1,4 @@
+@import "./color";
 header {
  display: flex;
  flex-direction: row;
@@ -7,8 +8,9 @@ header {
  top: 0px;
  height: 64px;
  width: 100%;
+ z-index: 999;
 
- background-color: #e5e5e5;
+ background-color: $grey;
  * {
   font-size: 20px;
   font-style: normal;
@@ -17,36 +19,47 @@ header {
   text-align: center;
   min-height: 64px;
  }
-}
+ h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10px;
+  font-weight: 700;
 
-h1 {
- display: flex;
- flex-direction: column;
- justify-content: center;
- margin: 0 10px;
- font-weight: 700;
-}
+  transition: color 1s;
+  @media screen and (max-width: 1500px) {
+   font-size: 15px;
+  }
+ }
+ h1:hover {
+  color: $highlight;
+  transition: color 1s;
+ }
 
-div[id="links"] {
- margin: 0 10px;
- display: flex;
- flex-direction: row;
- justify-content: space-evenly;
-}
+ div[id="links"] {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ }
 
-a {
- display: flex;
- flex-direction: column;
- justify-content: center;
- margin: 0 8px;
+ a,
+ a:hover,
+ a:active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 8px;
 
- font-weight: 500;
- color: #373737;
- text-align: center;
-}
-a:hover,
-a:active {
- text-decoration: none;
- color: #fff;
- background-color: #373737;
+  font-weight: 500;
+  color: #373737;
+  text-align: center;
+  @media screen and (max-width: 1500px) {
+   font-size: 15px;
+  }
+ }
+ a:hover,
+ a:active {
+  color: $highlight;
+ }
 }
