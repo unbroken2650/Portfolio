@@ -1,60 +1,60 @@
 @import "./color";
 
 div[id="landing"] {
- height: 100vh;
- width: 100%;
- background: rgb(87, 87, 87);
- background: linear-gradient(
-  90deg,
-  rgba(87, 87, 87, 1) 0%,
-  rgba(155, 155, 155, 1) 33%,
-  rgba(255, 255, 255, 1) 100%
- );
- section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  h2 {
-   font-weight: 700;
-   font-size: 65px;
+  height: 100vh;
+  width: 100%;
+  background: rgb(87, 87, 87);
+  background: linear-gradient(
+    90deg,
+    rgba(87, 87, 87, 1) 0%,
+    rgba(155, 155, 155, 1) 33%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    h2 {
+      font-weight: 700;
+      font-size: 65px;
+    }
+    h3 {
+      font-size: 30px;
+    }
+    h2,
+    h3,
+    p {
+      margin: 0;
+      color: $white;
+    }
+    @media screen and (max-width: 1200px) {
+      h2 {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
   }
-  h3 {
-   font-size: 30px;
-  }
-  h2,
-  h3,
-  p {
-   margin: 0;
-   color: $white;
-  }
-  @media screen and (max-width: 1500px) {
-   h2 {
-    font-size: 40px;
-   }
-   h3 {
-    font-size: 15px;
-   }
-   p {
-    font-size: 12px;
-   }
-  }
- }
 
- section[id="landingleft"] {
-  position: absolute;
-  width: 480px;
-  left: 10%;
-  top: 40%;
+  section[id="landingleft"] {
+    position: absolute;
+    width: 480px;
+    left: 10%;
+    top: 40%;
 
-  text-align: left;
- }
- section[id="landingright"] {
-  position: absolute;
-  width: 297px;
-  right: 10%;
-  bottom: 10%;
+    text-align: left;
+  }
+  section[id="landingright"] {
+    position: absolute;
+    width: 297px;
+    right: 10%;
+    bottom: 10%;
 
-  text-align: right;
- }
+    text-align: right;
+  }
 }
