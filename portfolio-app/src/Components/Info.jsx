@@ -5,16 +5,16 @@ import Stacks from "./2_Info/Stacks";
 import Advantages from "./2_Info/Advantages";
 
 function Info() {
- return (
-  <div id="info">
-   <h2>Let Me Introduce Myself</h2>
-   <div id="info-detail">
-    <Career />
-    <Stacks />
-    <Advantages />
-   </div>
-  </div>
- );
+  return (
+    <div id="info">
+      <h2>Let Me Introduce Myself</h2>
+      <div id="info-detail">
+        <Career />
+        <Stacks />
+        <Advantages />
+      </div>
+    </div>
+  );
 }
 
 export default Info;
