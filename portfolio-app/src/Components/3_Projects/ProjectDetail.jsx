@@ -1,32 +1,31 @@
 import React from "react";
 import LinkImage from "./LinkImage";
-
-function ProjectDetail() {
- return (
-  <section id="project-detail">
-   <img
-    src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
-    className="image_preview"
-    alt="sample"
-   ></img>
-   <div id="project-detail-title">
-    <h3>포트폴리오</h3>
-    <LinkImage></LinkImage>
-   </div>
-   <div id="project-detail-brief">
-    <p>팀 프로젝트(2명) / 2022.03 ~ 2022.06</p>
-    <p>기획, 개발 / 디자이너 : _____xhxy</p>
-    <p>React / Sass / Vercel</p>
-   </div>
-   <div id="project-detail-desc">
-    <p>
-     React를 학습하면서 얻은 지식으로 실제 웹사이트를 만들고 싶었는데, 마침
-     포트폴리오 사이트가 가장 나에게 필요한 것이라 생각했다.
-    </p>
-    <p>어떤 것에 중점을 두었고, 어떤 것이 어려웠다.</p>
-   </div>
-  </section>
- );
+function ProjectDetail(ProjectData) {
+  const { first_image, name, links, people, time, part, stacks, description } =
+    ProjectData.data.projects[0];
+  return (
+    <section id="project-detail">
+      <img src={first_image} className="image_preview" alt={name}></img>
+      <div id="project-detail-title">
+        <h3>{name}</h3>
+        <LinkImage link_image={links}></LinkImage>
+      </div>
+      <div id="project-detail-brief">
+        <p>
+          팀 프로젝트({people}명) / {time}
+        </p>
+        <p>{part}</p>
+        <p>
+          {stacks.map((s, index) => (
+            <span key={index}>{s}</span>
+          ))}
+        </p>
+      </div>
+      <div id="project-detail-desc">
+        <p>{description}</p>
+      </div>
+    </section>
+  );
 }
 
 export default ProjectDetail;
