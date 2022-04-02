@@ -1,10 +1,11 @@
 import React from "react";
 import ProjectList from "./ProjectList";
+import Title from "../reusable/Title";
 
 function ProjectsLeft() {
   return (
     <section id="projectsleft">
-      <h2>What I Did</h2>
+      <Title detail="What I Did" />
       <ProjectList />
     </section>
   );

@@ -1,9 +1,10 @@
 import React from "react";
+import Title from "../reusable/Title";
 
 function LandingLeft() {
   return (
     <section id="landingleft">
-      <h2>PORTFOLIO</h2>
+      <Title detail="PORTFOLIO" />
       <h3>Front-End Developer</h3>
       <p>Read More</p>
     </section>
