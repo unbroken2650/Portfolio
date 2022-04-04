@@ -1,13 +1,14 @@
 import React from "react";
 import ProjectList from "./ProjectList";
+import Title from "../reusable/Title";
 
 function ProjectsLeft() {
- return (
-  <section id="projectsleft">
-   <h2>What I Did</h2>
-   <ProjectList />
-  </section>
- );
+  return (
+    <section id="projectsleft">
+      <Title detail="What I Did" />
+      <ProjectList />
+    </section>
+  );
 }
 
 export default ProjectsLeft;

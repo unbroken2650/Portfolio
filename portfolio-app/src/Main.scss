@@ -4,29 +4,30 @@
 
 //임시 색상
 body {
- background-color: grey;
- main {
-  div {
-   //개발용
-   background: $black !important;
+  background-color: grey;
+  main {
+    div {
+      //개발용
+      background: $black !important;
+    }
   }
- }
 }
 
 body {
- margin: 0;
- max-width: 100vw;
- overflow-x: hidden;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 ::-webkit-scrollbar {
- display: none;
+  display: none;
 }
 
 div#react-container {
- display: flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 main {
- width: 100%;
+  width: 100%;
 }
