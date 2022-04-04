@@ -17,6 +17,7 @@ body {
   margin: 0;
   max-width: 100%;
   overflow-x: hidden;
+  touch-action: none;
 }
 ::-webkit-scrollbar {
   display: none;
