@@ -27,7 +27,7 @@ header {
   font-weight: 700;
 
   transition: color 1s;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1025px) {
    font-size: 15px;
   }
  }
@@ -54,7 +54,7 @@ header {
   font-weight: 500;
   color: #373737;
   text-align: center;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1025px) {
    font-size: 15px;
   }
  }
