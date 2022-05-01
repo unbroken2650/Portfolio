@@ -6,16 +6,16 @@ import Advantages from "./2_Info/Advantages";
 import Title from "./reusable/Title";
 
 function Info() {
-  return (
-    <div id="info">
-      <Title detail="Let Me Introduce Myself" />
-      <div id="info-detail">
-        <Career />
-        <Stacks />
-        <Advantages />
-      </div>
-    </div>
-  );
+ return (
+  <div id="info">
+   <Title detail="Let Me Introduce Myself" />
+   <div id="info-inside">
+    <Career />
+    <Stacks />
+    <Advantages />
+   </div>
+  </div>
+ );
 }
 
 export default Info;

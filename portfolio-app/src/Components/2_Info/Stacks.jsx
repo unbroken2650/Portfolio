@@ -1,20 +1,33 @@
 import React from "react";
+import { StackIcon } from "../../icons";
 
 function Stacks() {
-  return (
-    <section id="stacks">
-      <img
-        src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
-        alt="sample"></img>
-      <div id="stacks-detail">
-        <p>State Management (Redux)</p>
-        <p>Type Checking (Typescript)</p>
-        <p>Routing (React Router)</p>
-        <p>TDD + Unit Testing (Jest)</p>
-        <p>Deployment (Netlify)</p>
+ const stacks = [
+  "React(Javascript)",
+  "Scss / emotion",
+  "Vercel",
+  "Github",
+  "VS Code",
+ ];
+ return (
+  <section className="info-detail" id="Stacks">
+   <img
+    src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
+    alt="sample"
+   ></img>
+   <article id="info-stacks">
+    <h3>Stacks</h3>
+    <div id="stacks-detail">
+     {stacks.map((s, index) => (
+      <div className="stacks-stack">
+       <StackIcon />
+       <p key={index}>{s}</p>
       </div>
-    </section>
-  );
+     ))}
+    </div>
+   </article>
+  </section>
+ );
 }
 
 export default Stacks;
