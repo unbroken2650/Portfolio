@@ -41,6 +41,27 @@
      "src": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
     }
    ]
+  },
+  {
+   "name": "armycalculator",
+   "people": 1,
+   "time": "2021.05 ~ 2021.11",
+   "part": "개인 프로젝트",
+   "stacks": ["Javascript", "HTML", "CSS"],
+   "description": "전역일 계산하는 프로젝트",
+   "first_image": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg",
+   "links": [
+    {
+     "name": "Github",
+     "url": "https://github.com/unbroken2650/army-calculator",
+     "src": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
+    },
+    {
+     "name": "Notion",
+     "url": "https://github.com/unbroken2650/army-calculator",
+     "src": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
+    }
+   ]
   }
  ]
 }

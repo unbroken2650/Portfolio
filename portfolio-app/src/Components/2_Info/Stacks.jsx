@@ -19,7 +19,7 @@ function Stacks() {
     <h3>Stacks</h3>
     <div id="stacks-detail">
      {stacks.map((s, index) => (
-      <div className="stacks-stack">
+      <div key={index} className="stacks-stack">
        <StackIcon />
        <p key={index}>{s}</p>
       </div>

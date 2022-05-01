@@ -21,7 +21,7 @@ function Advantages() {
    <article id="info-advantages">
     <h3>Advantages</h3>
     {advantages.map((a, index) => (
-     <div className="advantages-adv">
+     <div key={index} className="advantages-adv">
       <h4>{a.name}</h4>
       <p>
        <ThumbsUpIcon />

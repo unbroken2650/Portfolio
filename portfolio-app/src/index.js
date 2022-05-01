@@ -1,10 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
 
-ReactDOM.render(
-  // eslint-disable-next-line react/jsx-filename-extension
-  <App />,
-  // eslint-disable-next-line no-undef
-  document.getElementById('react-container'),
-);
+const root = createRoot(document.getElementById("react-container"));
+root.render(<App />);

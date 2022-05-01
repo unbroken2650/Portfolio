@@ -1,7 +1,7 @@
 import React from "react";
 
 function ProjectList({ selectProject = (f) => f }) {
- const data = ["포트폴리오", "사물함 예약", "ssulocker"];
+ const data = ["포트폴리오", "사물함 예약", "armycalculator"];
  return (
   <div id="projects-lists">
    {data.map((l, index) => (
