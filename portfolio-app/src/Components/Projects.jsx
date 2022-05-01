@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectDetail from "./3_Projects/ProjectDetail";
-import ProjectsLeft from "./3_Projects/ProjectsLeft";
+import ProjectList from "./3_Projects/ProjectList";
+import Title from "./reusable/Title";
 import "../scss/Projects.module.scss";
-import ProjectData from "../data/projectsDetail.json";
 
 function Projects() {
-  return (
-    <div id="projects">
-      <ProjectsLeft />
-      <ProjectDetail data={ProjectData} />
-    </div>
-  );
+ const [selectedProject, setSelectedProject] = useState(0);
+ return (
+  <div id="projects">
+   <section id="projectsleft">
+    <Title detail="What I Did" />
+    <ProjectList selectProject={setSelectedProject} />
+   </section>
+   <ProjectDetail selectedProject={selectedProject} />
+  </div>
+ );
 }
 
 export default Projects;
