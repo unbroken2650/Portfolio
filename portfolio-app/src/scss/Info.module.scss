@@ -15,26 +15,25 @@ div[id="info"] {
   flex-direction: column;
  }
  h2 {
-  margin: 10px 0 20px;
-  left: 5%;
+  margin: 0.5em 0 1em;
   width: 100%;
 
   text-align: center;
   font-weight: 700;
   font-size: 65px;
   @media screen and (max-width: 1025px) {
-   width: 100%;
-   text-align: center;
-   font-size: 30px;
+   font-size: 20px;
   }
  }
  div[id="info-inside"] {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  height: 70%;
   width: 100%;
   @media screen and (max-width: 1025px) {
    flex-direction: column;
+   justify-content: space-between;
    align-items: center;
   }
  }
@@ -44,20 +43,53 @@ section[class="info-detail"] {
  height: 70vh;
  border-radius: 35px;
  box-shadow: 0px 4px 40px rgba(101, 101, 101, 0.25);
+
+ margin: 0 1em;
+
+ @media screen and (max-width: 1025px) {
+  width: 80%;
+  height: fit-content;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+
  img {
   width: 100%;
   height: 40%;
   object-fit: cover;
   border-radius: 35px 35px 0 0;
+  @media screen and (max-width: 1025px) {
+   width: 30%;
+   height: 30%;
+   border-radius: 35px 0 0 0;
+  }
  }
+
  article {
   padding: 0 30px;
+  @media screen and (max-width: 1025px) {
+   width: 70%;
+   padding: 0 5px;
+  }
  }
  h3 {
   font-size: 30px;
   color: $subtitle;
   line-height: 45px;
   margin: 20px 0;
+  @media screen and (max-width: 1025px) {
+   font-size: 15px;
+   margin: 0;
+  }
+ }
+ h4,
+ p {
+  @media screen and (max-width: 1025px) {
+   font-size: 12px;
+   margin: 0;
+  }
  }
 }
 
@@ -77,5 +109,14 @@ div[class="advantages-adv"] {
  h4,
  p {
   margin: 0;
+  @media screen and (max-width: 1025px) {
+   font-size: 12px;
+   margin: 0;
+  }
+ }
+ svg {
+  @media screen and (max-width: 1025px) {
+   display: none;
+  }
  }
 }
