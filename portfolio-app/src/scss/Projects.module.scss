@@ -38,7 +38,11 @@ div[id="projects"] {
    width: 100%;
    text-align: center;
    p {
-    margin: 0 5%;
+    margin: 1em 0;
+    box-shadow: 4px 4px 10px rgba(101, 101, 101, 0.25);
+    &:hover {
+     background-color: rgba(101, 101, 101, 0.25);
+    }
    }
    @media screen and (max-width: 1025px) {
     display: flex;
@@ -70,6 +74,7 @@ div[id="projects"] {
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   font-size: 25px;
    @media screen and (max-width: 1025px) {
     flex-direction: column;
     font-size: 12px;

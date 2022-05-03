@@ -17,7 +17,10 @@ function ProjectDetail({ selectedProject }) {
    </div>
    <div id="project-detail-brief">
     <p>
-     팀 프로젝트({projectData.people}명) / {projectData.time}
+     {projectData.people > 1
+      ? `팀 프로젝트 (${projectData.people}명)`
+      : "개인 프로젝트"}
+     {" / "} {projectData.time}
     </p>
     <p>{projectData.part}</p>
     <p id="project-detail-stacks">
