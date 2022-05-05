@@ -14,20 +14,20 @@ function ProjectDetail({ selectedProject }) {
    <div id="project-detail-title">
     <h3>{projectData.name}</h3>
     <LinkImage link_image={projectData.links}></LinkImage>
+    <p id="project-detail-stacks">
+     {projectData.stacks.map((s, index) => (
+      <span key={index}>{s}</span>
+     ))}
+    </p>
    </div>
    <div id="project-detail-brief">
     <p>
      {projectData.people > 1
       ? `팀 프로젝트 (${projectData.people}명)`
       : "개인 프로젝트"}
-     {" / "} {projectData.time}
     </p>
+    <p>{projectData.time}</p>
     <p>{projectData.part}</p>
-    <p id="project-detail-stacks">
-     {projectData.stacks.map((s, index) => (
-      <span key={index}>{s}</span>
-     ))}
-    </p>
    </div>
    <div id="project-detail-desc">
     <p>{projectData.description}</p>
