@@ -1,21 +1,20 @@
 body {
- margin: 0;
- cursor: default;
- * {
   margin: 0;
- }
+  cursor: default;
+  * {
+    margin: 0;
+  }
 }
 
 a,
 a:hover,
 a:active {
- text-decoration: none;
- outline: none;
- margin: 0;
- cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
 }
 
 h4,
 p {
- font-size: 20px;
+  font-size: 20px;
 }
