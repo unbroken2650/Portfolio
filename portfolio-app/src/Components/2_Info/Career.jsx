@@ -61,15 +61,15 @@ function Career() {
     }
   `;
   return (
-    <section className="info-detail" id="Career" css={section}>
+    <section className="info-detail" css={section}>
       <img
         src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
         alt="sample"
         css={image}
       ></img>
-      <article id="info-career" css={article}>
+      <article css={article}>
         <h3 css={subtitle}>Career</h3>
-        <div id="career-detail" css={detail}>
+        <div css={detail}>
           <p>2020.12 ~ 2022.06</p>
           <p>- 육군 병장 만기 전역</p>
           <p>2019.03</p>

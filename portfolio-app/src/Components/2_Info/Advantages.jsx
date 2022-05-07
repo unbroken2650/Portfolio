@@ -82,13 +82,13 @@ function Advantages() {
     { name: '집중력', desc: '한번 시작하면 끝까지 몰입합니다.' },
   ];
   return (
-    <section className="info-detail" id="Advantages" css={section}>
+    <section className="info-detail" css={section}>
       <img
         src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
         alt="sample"
         css={image}
       ></img>
-      <article id="info-advantages" css={article}>
+      <article css={article}>
         <h3 css={subtitle}>Advantages</h3>
         {advantages.map((a, index) => (
           <div key={index} className="advantages-adv" css={detail}>

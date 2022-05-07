@@ -71,15 +71,15 @@ function Stacks() {
     'VS Code',
   ];
   return (
-    <section className="info-detail" id="Stacks" css={section}>
+    <section className="info-detail" css={section}>
       <img
         src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
         alt="sample"
         css={image}
       ></img>
-      <article id="info-stacks" css={article}>
+      <article css={article}>
         <h3 css={subtitle}>Stacks</h3>
-        <div id="stacks-detail" css={detail}>
+        <div css={detail}>
           {stacks.map((s, index) => (
             <div key={index} className="stacks-stack">
               <StackIcon />
