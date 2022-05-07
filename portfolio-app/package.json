@@ -8,12 +8,13 @@
     "@emotion/eslint-plugin": "^11.7.0",
     "@emotion/react": "^11.9.0",
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^14.1.0",
+    "@testing-library/react": "^13.2.0",
+    "@testing-library/user-event": "^14.1.1",
     "@typescript-eslint/parser": "^5.22.0",
     "customize-cra": "^1.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-react-app": "^7.0.1",
+    "ncu": "^0.2.1",
     "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-app-rewired": "^2.2.1",
@@ -44,13 +45,13 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.2.0",
+    "eslint": "^8.15.0",
     "eslint-config-airbnb": "19.0.4",
-    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "react-scripts": "^5.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "react-scripts": "^5.0.1",
     "webpack-bundle-analyzer": "^4.5.0"
   }
 }
