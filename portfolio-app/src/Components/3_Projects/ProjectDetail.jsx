@@ -97,7 +97,7 @@ function ProjectDetail({ selectedProject }) {
     <section css={container}>
       <img
         css={imageStyle}
-        src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
+        src={projectData.first_image}
         alt={projectData.name}
       ></img>
       <div css={titleContainer}>

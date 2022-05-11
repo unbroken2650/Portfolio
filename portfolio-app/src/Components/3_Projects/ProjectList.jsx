@@ -2,7 +2,12 @@ import React from 'react';
 import { css } from '@emotion/react';
 
 function ProjectList({ selectProject = f => f }) {
-  const data = ['포트폴리오', '사물함 예약', 'armycalculator'];
+  const data = [
+    'Notion Custom Widget',
+    '포트폴리오',
+    '사물함 예약',
+    'armycalculator',
+  ];
 
   const container = css`
     width: 100%;
