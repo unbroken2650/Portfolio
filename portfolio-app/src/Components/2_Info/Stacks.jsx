@@ -22,7 +22,7 @@ function Stacks() {
   `;
 
   const image = css`
-    width: 100px;
+    width: 100%;
     height: 40%;
     object-fit: cover;
     border-radius: 25px 25px 0 0;

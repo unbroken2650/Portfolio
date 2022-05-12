@@ -31,9 +31,11 @@ function Header() {
     flex-direction: column;
     justify-content: center;
     margin: 0 10px;
-    font-weight: 700;
 
     transition: color 1s;
+
+    font-size: 25px;
+    font-weight: 700;
     @media screen and (max-width: 1025px) {
       font-size: 15px;
     }
