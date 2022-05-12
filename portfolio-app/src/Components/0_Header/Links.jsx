@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import colorData from '../../style/color.json';
+import colorData from '../../styles/color.json';
 import linkData from '../../data/headerLink.json';
 
 function Links() {

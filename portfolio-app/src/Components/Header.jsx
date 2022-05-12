@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import Links from './0_Header/Links';
-import color from '../style/color.json';
+import color from '../styles/color.json';
 
 function Header() {
   const container = css`

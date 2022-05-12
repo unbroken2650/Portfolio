@@ -1,6 +1,13 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
-const root = createRoot(document.getElementById("react-container"));
-root.render(<App />);
+import GlobalStyle from './styles/Reset';
+import App from './App';
+
+const root = createRoot(document.getElementById('react-container'));
+root.render(
+  <>
+    <GlobalStyle />
+    <App />
+  </>,
+);
