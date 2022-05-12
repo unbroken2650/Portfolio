@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import { StackIcon } from '../../icons';
+import { StackIcon } from '../../styles/icons';
 
 function Stacks() {
   const section = css`

@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/react';
-import { ThumbsUpIcon } from '../../icons';
+import { ThumbsUpIcon } from '../../styles/icons';
 function Advantages() {
   const section = css`
     width: 25%;
