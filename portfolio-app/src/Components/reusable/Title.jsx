@@ -25,7 +25,8 @@ function Title({ detail, align, marginDefault }) {
     font-weight: 700;
     font-size: 65px;
     @media screen and (max-width: 1025px) {
-      font-size: 40px;
+      margin: 0.1em 0 0.2em;
+      font-size: 30px;
     }
   `;
   return <h2 css={[title, textAlign, textMargin]}>{detail}</h2>;

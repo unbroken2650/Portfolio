@@ -67,6 +67,9 @@ function ProjectDetail({ selectedProject }) {
     padding: 1% 2%;
     border: solid 3px rgba(101, 101, 101, 1);
     border-radius: 10px;
+    @media screen and (max-width: 1025px) {
+      font-size: 12px;
+    }
   `;
 
   const briefDetailContainer = css`
@@ -79,8 +82,10 @@ function ProjectDetail({ selectedProject }) {
     @media screen and (max-width: 1025px) {
       flex-direction: column;
 
-      text-align: center;
-      font-size: 12px;
+      p {
+        text-align: center;
+        font-size: 16px;
+      }
     }
   `;
 
@@ -88,8 +93,10 @@ function ProjectDetail({ selectedProject }) {
     width: 100%;
     word-break: keep-all;
     @media screen and (max-width: 1025px) {
-      text-align: center;
-      font-size: 12px;
+      p {
+        text-align: center;
+        font-size: 16px;
+      }
     }
   `;
 

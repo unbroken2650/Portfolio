@@ -45,7 +45,7 @@
     {
       "name": "사물함 예약",
       "people": 3,
-      "time": "2021. 11. 07~ 2022.03.13",
+      "time": "2021. 11 ~ 2022.03",
       "part": "기획, 프론트, 디자인 / 백엔드 : makeitmyway / 디자인, 프론트 : intersoom",
       "stacks": ["Django", "Sass", "Javascript"],
       "description": "사물함 예약하는 사이트",
@@ -65,9 +65,9 @@
     },
     {
       "name": "armycalculator",
-      "people": 1,
+      "people": 2,
       "time": "2021.05 ~ 2021.11",
-      "part": "개인 프로젝트",
+      "part": "기획, 개발 / 디자이너 : ____xhxy",
       "stacks": ["Javascript", "HTML", "CSS"],
       "description": "전역일 계산하는 프로젝트",
       "first_image": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg",
