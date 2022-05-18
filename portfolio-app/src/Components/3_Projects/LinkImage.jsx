@@ -14,9 +14,24 @@ function LinkImage(links) {
   `;
 
   const imageStyle = css`
+    @keyframes hover {
+      0% {
+        transform: scale(1, 1);
+      }
+      75% {
+        transform: scale(1.2, 1.2);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
     width: 50px;
     @media screen and (max-width: 1025px) {
       width: 25px;
+    }
+    &:hover {
+      animation: hover;
+      animation-duration: 1s;
     }
   `;
   return (

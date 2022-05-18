@@ -33,7 +33,7 @@ function LandingLeft() {
     <section id="landingleft" css={section}>
       <Title detail="PORTFOLIO" align="left" margin={false} />
       <h3 css={subtitle}>Front-End Developer</h3>
-      <p css={detail}>Read More</p>
+      <p css={detail}></p>
     </section>
   );
 }

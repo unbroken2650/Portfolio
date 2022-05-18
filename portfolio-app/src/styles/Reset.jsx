@@ -8,6 +8,10 @@ const reset = css`
     cursor: default;
     * {
       margin: 0;
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
     }
   }
 
