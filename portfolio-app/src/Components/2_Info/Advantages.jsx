@@ -1,6 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/react';
 import { ThumbsUpIcon } from '../../styles/icons';
+
 function Advantages() {
   const section = css`
     width: 25%;
@@ -23,7 +24,7 @@ function Advantages() {
   const image = css`
     width: 100%;
     height: 40%;
-    object-fit: cover;
+    object-fit: scale-down;
     border-radius: 25px 25px 0 0;
     @media screen and (max-width: 1025px) {
       width: 30%;
@@ -84,7 +85,7 @@ function Advantages() {
   return (
     <section className="info-detail" css={section}>
       <img
-        src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
+        src={require('../../images/strength_icon.png')}
         alt="sample"
         css={image}
       ></img>

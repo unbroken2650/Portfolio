@@ -33,9 +33,10 @@ function ProjectDetail({ selectedProject }) {
   `;
 
   const imageStyle = css`
-    width: 300px;
+    height: 300px;
+    object-fit: contain;
     @media screen and (max-width: 1025px) {
-      width: 150px;
+      height: 150px;
     }
   `;
 

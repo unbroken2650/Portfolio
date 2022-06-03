@@ -3,10 +3,10 @@
     {
       "name": "Notion 커스텀 위젯",
       "people": 2,
-      "time": "2022.05",
+      "time": "2022.05 ~",
       "part": "기획, 개발 / 디자이너 : ____xhxy",
       "stacks": ["HTML", "CSS", "Javascript(only)"],
-      "description": "노션 커스텀 위젯...",
+      "description": "노션에서 간단하게 사용할 수 있는 위젯을 만들어 보았다. 한국어 명언 위젯은 5분마다 새로운 명언과 이미지가 로드된다.",
       "first_image": "https://user-images.githubusercontent.com/58286965/167654585-10f7f8c0-7350-4fad-9329-d4a7349efbd7.png",
       "links": [
         {
@@ -27,8 +27,8 @@
       "time": "2022.03 ~ 2022.06",
       "part": "기획, 개발 / 디자이너 : ____xhxy",
       "stacks": ["React", "Sass", "Vercel"],
-      "description": "React를 학습하면서 얻은 지식으로 실제 웹사이트를 만들고 싶었는데, 마침 포트폴리오 사이트가 가장 나에게 필요한 것이라 생각했다. 어떤 것에 중점을 두었고, 어떤 것이 어려웠다.",
-      "first_image": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg",
+      "description": "React를 학습하면서 얻은 지식으로 실제 웹사이트를 만들고 싶었는데, 마침 포트폴리오 사이트가 가장 나에게 필요한 것이라 생각했다. 처음으로 React로 진행한 프로젝트라서 막히는 게 많았지만 초기 버전을 업로드 했다. * 블로그 기능 추가 예정",
+      "first_image": "https://i.imgur.com/YzLkSwl.png",
       "links": [
         {
           "name": "Github",
@@ -46,10 +46,10 @@
       "name": "사물함 예약",
       "people": 3,
       "time": "2021. 11 ~ 2022.03",
-      "part": "기획, 프론트, 디자인 / 백엔드 : makeitmyway / 디자인, 프론트 : intersoom",
+      "part": "프론트, 기획, 디자인 / 기획, 백엔드 : makeitmyway / 디자인, 프론트 : intersoom",
       "stacks": ["Django", "Sass", "Javascript"],
-      "description": "사물함 예약하는 사이트",
-      "first_image": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg",
+      "description": "단과대 사물함 예약 웹사이트가 사라져서 학우들과 함께 만들게 되었다.",
+      "first_image": "https://i.imgur.com/hnKxC32.png",
       "links": [
         {
           "name": "Github",
@@ -66,11 +66,11 @@
     {
       "name": "armycalculator",
       "people": 2,
-      "time": "2021.05 ~ 2021.11",
+      "time": "2021.09 ~ 2021.11",
       "part": "기획, 개발 / 디자이너 : ____xhxy",
       "stacks": ["Javascript", "HTML", "CSS"],
-      "description": "전역일 계산하는 프로젝트",
-      "first_image": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg",
+      "description": "군대에서 Javascript 기초를 학습하면서 가장 많이 사용하는 기능을 구현해보고 싶어서 만든 사이트이다. ",
+      "first_image": "https://i.imgur.com/UmuINr4.png",
       "links": [
         {
           "name": "Github",
