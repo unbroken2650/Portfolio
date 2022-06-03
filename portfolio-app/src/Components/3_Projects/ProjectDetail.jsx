@@ -47,8 +47,12 @@ function ProjectDetail({ selectedProject }) {
     justify-content: space-between;
     align-items: center;
     font-size: 25px;
+    h3 {
+      font-size: 30px;
+    }
     @media screen and (max-width: 1025px) {
-      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100%;
       font-size: 12px;
     }
   `;
@@ -60,7 +64,7 @@ function ProjectDetail({ selectedProject }) {
     justify-content: space-between;
     align-items: center;
     @media screen and (max-width: 1025px) {
-      width: 100%;
+      width: 40%;
     }
   `;
 
