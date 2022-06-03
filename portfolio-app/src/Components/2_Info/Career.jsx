@@ -28,6 +28,7 @@ function Career() {
     @media screen and (max-width: 1025px) {
       width: 30%;
       height: 50%;
+      margin: 1em 0 0;
       border-radius: 25px 0 0 0;
     }
   `;

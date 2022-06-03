@@ -30,7 +30,7 @@ function Header() {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 10px;
+    margin: 1px 8px;
 
     transition: color 1s;
 

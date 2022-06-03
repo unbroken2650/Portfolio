@@ -29,6 +29,7 @@ function Advantages() {
     @media screen and (max-width: 1025px) {
       width: 30%;
       height: 50%;
+      margin: 1em 0 0;
       border-radius: 25px 0 0 0;
     }
   `;
@@ -60,6 +61,7 @@ function Advantages() {
     h4,
     p {
       margin: 0;
+      font-size: 15px;
       @media screen and (max-width: 1025px) {
         font-size: 12px;
         margin: 0;
