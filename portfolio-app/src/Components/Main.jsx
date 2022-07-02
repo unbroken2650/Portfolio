@@ -1,7 +1,8 @@
-import { React } from "react";
-import Landing from "./Landing";
-import Info from "./Info";
-import Projects from "./Projects";
+import { React } from 'react';
+import Landing from './Landing';
+import Info from './Info';
+import Projects from './Projects';
+import Preload from './reusable/Preload';
 
 function Main() {
   return (
@@ -9,6 +10,7 @@ function Main() {
       <Landing />
       <Info />
       <Projects />
+      <Preload />
     </main>
   );
 }
