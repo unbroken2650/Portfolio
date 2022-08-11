@@ -1,48 +1,142 @@
-import React from "react";
-import LinkImage from "./LinkImage";
-function ProjectDetail() {
- const links = [
-  {
-   name: "Github",
-   url: "https://www.github.com/unbroken2650/Portfolio",
-   src: "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg",
-  },
-  {
-   name: "Notion",
-   url: "https://www.github.com/unbroken2650/Portfolio",
-   src: "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg",
-  },
- ];
- const stacks = ["React", "Sass", "Vercel"];
- return (
-  <section id="project-detail">
-   <img
-    src="https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
-    className="image_preview"
-    alt="포트폴리오"
-   ></img>
-   <div id="project-detail-title">
-    <h3>포트폴리오</h3>
-    <LinkImage link_image={links}></LinkImage>
-   </div>
-   <div id="project-detail-brief">
-    <p>팀 프로젝트(2명) / 2022.03 ~ 2022.06</p>
-    <p>기획, 개발 / 디자이너 : ____xhxy</p>
-    <p id="project-detail-stacks">
-     {stacks.map((s, index) => (
-      <span key={index}>{s}</span>
-     ))}
-    </p>
-   </div>
-   <div id="project-detail-desc">
-    <p>
-     React를 학습하면서 얻은 지식으로 실제 웹사이트를 만들고 싶었는데, 마침
-     포트폴리오 사이트가 가장 나에게 필요한 것이라 생각했다. 어떤 것에 중점을
-     두었고, 어떤 것이 어려웠다.
-    </p>
-   </div>
-  </section>
- );
+import React from 'react';
+import { css } from '@emotion/react';
+import LinkImage from './LinkImage';
+import projects from '../../data/projectsDetail.json';
+
+function ProjectDetail({ selectedProject }) {
+  const projectData = projects.projects[selectedProject];
+
+  const container = css`
+    width: 60%;
+    margin: 0 3%;
+    padding: 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    word-break: keep-all;
+
+    border-radius: 25px;
+    box-shadow: 0px 4px 40px rgba(101, 101, 101, 0.25);
+
+    @media screen and (max-width: 1025px) {
+      margin: 1em 0;
+      padding: 1em;
+
+      align-items: center;
+    }
+    & > p {
+      @media screen and (max-width: 1025px) {
+        font-size: 15px;
+      }
+    }
+  `;
+
+  const imageStyle = css`
+    height: 300px;
+    object-fit: contain;
+    @media screen and (max-width: 1025px) {
+      height: 150px;
+    }
+  `;
+
+  const titleContainer = css`
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    h3 {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 1025px) {
+      justify-content: space-evenly;
+      width: 100%;
+      font-size: 12px;
+    }
+  `;
+
+  const stackContainerStyle = css`
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 1025px) {
+      width: 40%;
+    }
+  `;
+
+  const stackStyle = css`
+    padding: 1% 2%;
+    border: solid 3px rgba(101, 101, 101, 1);
+    border-radius: 10px;
+    @media screen and (max-width: 1025px) {
+      font-size: 12px;
+    }
+  `;
+
+  const briefDetailContainer = css`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    @media screen and (max-width: 1025px) {
+      flex-direction: column;
+
+      p {
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+  `;
+
+  const descDetailContainer = css`
+    width: 100%;
+    word-break: keep-all;
+    @media screen and (max-width: 1025px) {
+      p {
+        text-align: center;
+        font-size: 16px;
+      }
+    }
+  `;
+
+  return (
+    <section css={container}>
+      <img
+        css={imageStyle}
+        src={projectData.first_image}
+        alt={projectData.name}
+      ></img>
+      <div css={titleContainer}>
+        <h3>{projectData.name}</h3>
+        <LinkImage link_image={projectData.links}></LinkImage>
+        <p css={stackContainerStyle}>
+          {projectData.stacks.map((s, index) => (
+            <span css={stackStyle} key={index}>
+              {s}
+            </span>
+          ))}
+        </p>
+      </div>
+      <div css={briefDetailContainer}>
+        <p>
+          {projectData.people > 1
+            ? `팀 프로젝트 (${projectData.people}명)`
+            : '개인 프로젝트'}
+        </p>
+        <p>{projectData.time}</p>
+        <p>{projectData.part}</p>
+      </div>
+      <div css={descDetailContainer}>
+        <p>{projectData.description}</p>
+      </div>
+    </section>
+  );
 }
 
 export default ProjectDetail;

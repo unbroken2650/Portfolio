@@ -1,44 +1,86 @@
 {
   "projects": [
     {
+      "name": "Notion 커스텀 위젯",
+      "people": 2,
+      "time": "2022.05 ~",
+      "part": "기획, 개발 / 디자이너 : ____xhxy",
+      "stacks": ["HTML", "CSS", "Javascript(only)"],
+      "description": "노션에서 간단하게 사용할 수 있는 위젯을 만들어 보았다. 한국어 명언 위젯은 5분마다 새로운 명언과 이미지가 로드된다.",
+      "first_image": "https://user-images.githubusercontent.com/58286965/167654585-10f7f8c0-7350-4fad-9329-d4a7349efbd7.png",
+      "links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/unbroken2650/Notion-Custom-Widget",
+          "src": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        },
+        {
+          "name": "Notion",
+          "url": "https://hyandsh.notion.site/Korean-Quotes-c6bda3e1c2b84883bd496b067df687c3",
+          "src": "https://img.icons8.com/ios/500/notion.png"
+        }
+      ]
+    },
+    {
       "name": "포트폴리오",
       "people": 2,
       "time": "2022.03 ~ 2022.06",
       "part": "기획, 개발 / 디자이너 : ____xhxy",
       "stacks": ["React", "Sass", "Vercel"],
-      "description": "React를 학습하면서 얻은 지식으로 실제 웹사이트를 만들고 싶었는데, 마침 포트폴리오 사이트가 가장 나에게 필요한 것이라 생각했다. 어떤 것에 중점을 두었고, 어떤 것이 어려웠다.",
-      "first_image": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg",
+      "description": "React를 학습하면서 얻은 지식으로 실제 웹사이트를 만들고 싶었는데, 마침 포트폴리오 사이트가 가장 나에게 필요한 것이라 생각했다. 처음으로 React로 진행한 프로젝트라서 막히는 게 많았지만 초기 버전을 업로드 했다. * 블로그 기능 추가 예정",
+      "first_image": "https://i.imgur.com/YzLkSwl.png",
       "links": [
         {
           "name": "Github",
           "url": "https://www.github.com/unbroken2650/Portfolio",
-          "src": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
+          "src": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
         },
         {
           "name": "Notion",
-          "url": "https://www.github.com/unbroken2650/Portfolio",
-          "src": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
+          "url": "https://hyandsh.notion.site/e6497ad9529f46ebb300bc145541dd11",
+          "src": "https://img.icons8.com/ios/500/notion.png"
         }
       ]
     },
     {
       "name": "사물함 예약",
       "people": 3,
-      "time": "2021.11 ~ 2022.03",
-      "part": "기획, 개발 / 디자이너 : ____xhxy",
-      "stacks": ["React", "Sass", "Vercel"],
-      "description": "React를 학습하면서 얻은 지식으로 실제 웹사이트를 만들고 싶었는데, 마침 포트폴리오 사이트가 가장 나에게 필요한 것이라 생각했다. 어떤 것에 중점을 두었고, 어떤 것이 어려웠다.",
-      "first_image": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg",
+      "time": "2021. 11 ~ 2022.03",
+      "part": "프론트, 기획, 디자인 / 기획, 백엔드 : makeitmyway / 디자인, 프론트 : intersoom",
+      "stacks": ["Django", "Sass", "Javascript"],
+      "description": "단과대 사물함 예약 웹사이트가 사라져서 학우들과 함께 만들게 되었다.",
+      "first_image": "https://i.imgur.com/hnKxC32.png",
       "links": [
         {
           "name": "Github",
-          "url": "https://www.github.com/unbroken2650/Portfolio",
-          "src": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
+          "url": "https://github.com/TEAM-MAT/lockerweb",
+          "src": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
         },
         {
-          "name": "Notion",
-          "url": "https://www.github.com/unbroken2650/Portfolio",
-          "src": "https://www.duemarichapter.it/wp-content/uploads/2018/11/blog-ph-1.jpg"
+          "name": "Prototype",
+          "url": "http://ssuitlocker.kro.kr/locker/login",
+          "src": "https://cdn-icons-png.flaticon.com/512/1006/1006771.png"
+        }
+      ]
+    },
+    {
+      "name": "armycalculator",
+      "people": 2,
+      "time": "2021.09 ~ 2021.11",
+      "part": "기획, 개발 / 디자이너 : ____xhxy",
+      "stacks": ["Javascript", "HTML", "CSS"],
+      "description": "군대에서 Javascript 기초를 학습하면서 가장 많이 사용하는 기능을 구현해보고 싶어서 만든 사이트이다. ",
+      "first_image": "https://i.imgur.com/UmuINr4.png",
+      "links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/unbroken2650/army-calculator",
+          "src": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        },
+        {
+          "name": "Naver Blog",
+          "url": "https://bit.ly/3w4qFRv",
+          "src": "https://i.ibb.co/M2CJhRy/blog.png"
         }
       ]
     }

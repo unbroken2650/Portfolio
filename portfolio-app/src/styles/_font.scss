@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: url('../fonts/AppleSDGothicNeoH_light.eot');
+  src: local('AppleSDGothiNeoH'),
+    url('../fonts/AppleSDGothicNeoH_light.eot?iefix')
+      format('embedded-opentype'),
+    url('../fonts/AppleSDGothicNeoH_light.woff2') format('woff2'),
+    url('../fonts/AppleSDGothicNeoH_light.woff') format('woff'),
+    url('../fonts/AppleSDGothicNeoH_light.ttf') format('truetype'),
+    url('../fonts/AppleSDGothicNeoH_light.ttf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Apple SD Gothic Neo';
+  src: url('../fonts/AppleSDGothicNeoB_light.eot');
+  src: local('AppleSDGothiNeoB'),
+    url('../fonts/AppleSDGothicNeoB_light.eot?iefix')
+      format('embedded-opentype'),
+    url('../fonts/AppleSDGothicNeoB_light.woff2') format('woff2'),
+    url('../fonts/AppleSDGothicNeoB_light.woff') format('woff'),
+    url('../fonts/AppleSDGothicNeoB_light.ttf') format('truetype'),
+    url('../fonts/AppleSDGothicNeoB_light.ttf') format('opentype');
+  font-weight: 500;
+}
+* {
+  font-family: 'Apple SD Gothic Neo', Arial, Courier New, Helvetica, sans-serif,
+    serif;
+}

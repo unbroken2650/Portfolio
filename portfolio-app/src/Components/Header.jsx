@@ -1,12 +1,53 @@
-import React from "react";
-import Title from "./0_Header/Title";
-import Links from "./0_Header/Links";
-import "../scss/Header.module.scss";
+import React from 'react';
+import { css } from '@emotion/react';
+import Links from './0_Header/Links';
+import color from '../styles/color.json';
 
 function Header() {
+  const container = css`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0px;
+    height: 64px;
+    width: 100%;
+    z-index: 999;
+
+    background-color: ${color.white};
+    header & {
+      font-size: 20px;
+      font-style: normal;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+      min-height: 64px;
+    }
+  `;
+
+  const title = css`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1px 8px;
+
+    transition: color 1s;
+
+    font-size: 25px;
+    font-weight: 700;
+    @media screen and (max-width: 1025px) {
+      font-size: 15px;
+    }
+    &:hover {
+      color: ${color.highlight};
+      transition: color 1s;
+    }
+  `;
+
   return (
-    <header>
-      <Title />
+    <header css={container}>
+      <h1 css={title}>SUHO HAN</h1>
       <Links />
     </header>
   );

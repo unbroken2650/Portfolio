@@ -1,11 +1,44 @@
-import React from "react";
+import React from 'react';
+import { css } from '@emotion/react';
 
 function LinkImage(links) {
+  const container = css`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  `;
+
+  const linkStyle = css`
+    margin: 0 1%;
+    width: min-content;
+  `;
+
+  const imageStyle = css`
+    @keyframes hover {
+      0% {
+        transform: scale(1, 1);
+      }
+      75% {
+        transform: scale(1.2, 1.2);
+      }
+      100% {
+        transform: scale(1, 1);
+      }
+    }
+    width: 50px;
+    @media screen and (max-width: 1025px) {
+      width: 25px;
+    }
+    &:hover {
+      animation: hover;
+      animation-duration: 1s;
+    }
+  `;
   return (
-    <div id="LinkImage">
+    <div css={container}>
       {links.link_image.map(({ name, url, src }) => (
-        <a key={name} id={name} href={url}>
-          <img src={src} className="image_link" alt={`link to ${name}`}></img>
+        <a css={linkStyle} key={name} href={url}>
+          <img css={imageStyle} src={src} alt={`link to ${name}`}></img>
         </a>
       ))}
     </div>
