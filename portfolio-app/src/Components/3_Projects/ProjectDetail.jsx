@@ -34,6 +34,7 @@ function ProjectDetail({ selectedProject }) {
 
   const imageStyle = css`
     height: 300px;
+    min-width: 400px;
     object-fit: contain;
     @media screen and (max-width: 1025px) {
       height: 150px;

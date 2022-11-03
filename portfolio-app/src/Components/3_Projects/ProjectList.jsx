@@ -1,13 +1,15 @@
 import React from 'react';
 import { css } from '@emotion/react';
+import projects from '../../data/projectsDetail.json';
 
 function ProjectList({ selectProject = f => f }) {
-  const data = [
-    'Notion Custom Widget',
-    '포트폴리오',
-    '사물함 예약',
-    'armycalculator',
-  ];
+  const data = () => {
+    const newArr = [];
+    for (var idx = 0; idx < projects.number; idx++) {
+      newArr.push(projects.projects[idx].name);
+    }
+    return newArr;
+  };
 
   const container = css`
     width: 100%;
@@ -35,7 +37,7 @@ function ProjectList({ selectProject = f => f }) {
   `;
   return (
     <div css={container}>
-      {data.map((l, index) => (
+      {data().map((l, index) => (
         <p css={listStyle} key={index} onClick={() => selectProject(index)}>
           {l}
         </p>

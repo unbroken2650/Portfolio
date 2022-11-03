@@ -32,11 +32,7 @@ function Info() {
   `;
   return (
     <div css={container}>
-      <Title
-        detail="Let Me Introduce Myself"
-        align="center"
-        marginDefault={true}
-      />
+      <Title detail="Introducing Myself" align="center" marginDefault={true} />
       <div css={insideContainer}>
         <Career />
         <Stacks />

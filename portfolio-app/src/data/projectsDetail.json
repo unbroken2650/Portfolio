@@ -1,5 +1,27 @@
 {
+  "number": 5,
   "projects": [
+    {
+      "name": "고민사거리",
+      "people": 4,
+      "time": "2022.03 ~ 2022.11",
+      "part": "FE&기획 / FE&디자인 : intersoom / BE&기획 : makeitmyway / BE&DB : sangcheol12",
+      "stacks": ["react", "emotion", "zustand"],
+      "description": "더 이상의 고민은 없다 이제는 벗어나자! 특정 메뉴가 아닌 음식의 특징과 프랜차이즈 포함 여부, 지역을 선택하여 식당을 추천해주는 서비스.",
+      "first_image": "https://user-images.githubusercontent.com/78731710/185964870-fbacd62b-1bb3-4614-b24b-352df0b7961b.png",
+      "links": [
+        {
+          "name": "Github",
+          "url": "https://github.com/TEAM-MAT/gomin-sageori",
+          "src": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/team.mat.ssu/",
+          "src": "https://img.icons8.com/material-outlined/96/000000/instagram-new--v1.png"
+        }
+      ]
+    },
     {
       "name": "Notion 커스텀 위젯",
       "people": 2,
