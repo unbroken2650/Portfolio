@@ -5,7 +5,7 @@ function LinkImage(links) {
   const container = css`
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-evenly;
   `;
 
   const linkStyle = css`
