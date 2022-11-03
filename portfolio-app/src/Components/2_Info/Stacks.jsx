@@ -23,7 +23,7 @@ function Stacks() {
 
   const image = css`
     width: 100%;
-    height: 40%;
+    height: 100%;
     object-fit: scale-down;
     border-radius: 25px 25px 0 0;
     @media screen and (max-width: 1025px) {
@@ -64,6 +64,13 @@ function Stacks() {
       }
     }
   `;
+
+  const spanStyle = css`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  `;
+
   const stacks = [
     'React(Javascript)',
     'Scss / emotion',
@@ -83,8 +90,10 @@ function Stacks() {
         <div css={detail}>
           {stacks.map((s, index) => (
             <div key={index} className="stacks-stack">
-              <StackIcon />
-              <span key={index}>{s}</span>
+              <span css={spanStyle} key={index}>
+                <StackIcon />
+                {s}
+              </span>
             </div>
           ))}
         </div>
