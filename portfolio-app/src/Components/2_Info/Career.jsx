@@ -71,8 +71,6 @@ function Career() {
       <article css={article}>
         <h3 css={subtitle}>Career</h3>
         <div css={detail}>
-          <p>2020.12 ~ 2022.06</p>
-          <p>- 육군 병장 만기 전역</p>
           <p>2019.03</p>
           <p>- 숭실대학교 전자정보공학부 IT융합전공 입학</p>
         </div>

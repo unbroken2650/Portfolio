@@ -23,7 +23,7 @@ function Stacks() {
 
   const image = css`
     width: 100%;
-    height: 100%;
+    height: 40%;
     object-fit: scale-down;
     border-radius: 25px 25px 0 0;
     @media screen and (max-width: 1025px) {

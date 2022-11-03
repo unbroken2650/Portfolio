@@ -37,6 +37,8 @@ function ProjectDetail({ selectedProject }) {
     min-width: 400px;
     object-fit: contain;
     @media screen and (max-width: 1025px) {
+      min-width: 0;
+      max-width: 250px;
       height: 150px;
     }
   `;
