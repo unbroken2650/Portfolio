@@ -34,14 +34,17 @@ function ProjectDetail({ selectedProject }) {
 
   const imageStyle = css`
     height: 300px;
+    min-width: 400px;
     object-fit: contain;
     @media screen and (max-width: 1025px) {
+      min-width: 0;
+      max-width: 250px;
       height: 150px;
     }
   `;
 
   const titleContainer = css`
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -51,6 +54,7 @@ function ProjectDetail({ selectedProject }) {
       font-size: 30px;
     }
     @media screen and (max-width: 1025px) {
+      flex-direction: column;
       justify-content: space-evenly;
       width: 100%;
       font-size: 12px;
@@ -61,10 +65,11 @@ function ProjectDetail({ selectedProject }) {
     width: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    @media screen and (max-width: 1025px) {
-      width: 40%;
+    @media screen and (max-width: 765px) {
+      justify-content: space-between;
+      width: 80%;
     }
   `;
 

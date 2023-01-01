@@ -64,6 +64,13 @@ function Stacks() {
       }
     }
   `;
+
+  const spanStyle = css`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  `;
+
   const stacks = [
     'React(Javascript)',
     'Scss / emotion',
@@ -83,8 +90,10 @@ function Stacks() {
         <div css={detail}>
           {stacks.map((s, index) => (
             <div key={index} className="stacks-stack">
-              <StackIcon />
-              <span key={index}>{s}</span>
+              <span css={spanStyle} key={index}>
+                <StackIcon />
+                {s}
+              </span>
             </div>
           ))}
         </div>

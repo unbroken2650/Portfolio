@@ -26,9 +26,8 @@ function LandingRight() {
   `;
   const detailData = [
     '숭실대학교 전자정보공학부 IT융합전공',
-    'GPA ?.?/4/5',
-    'ENTJ',
-    '가나다라',
+    'ESTJ',
+    '01.01.16',
   ];
   return (
     <section id="landingright" css={section}>
